@@ -1,14 +1,12 @@
 function ucFirst(str) {
+  firstLetter = str.slice(0, 1);
+  firstLetterUp = firstLetter.toUpperCase();
+  otherPart = str.slice(1);
 
-  // if (str = 0) {
-  //   return '';
-  // }
-
-  strNew = (str[0].toUpperCase() + str.slice(1));
-  return strNew;
+  return `${firstLetterUp}${otherPart}`;
 }
 
-// console.log (ucFirst('dfd'))
+console.log (ucFirst('dada'));
 
 
 
